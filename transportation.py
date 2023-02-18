@@ -1,6 +1,12 @@
 """
 The Beer Distribution Problem [1].
 
+Find the optimal number of units that need to be transported through each route
+while minimising costs (known the cost to transport each unit in every route). 
+
+Constraints are minimal number of units that need to be delivered in each house
+and maximum number of units produced in each warehouse.
+
 References
 ----------
 [1] https://coin-or.github.io/pulp/CaseStudies/a_transportation_problem.html
