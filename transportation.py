@@ -13,7 +13,7 @@ from pulp import *
 warehouses = ["A", "B"]
 houses = [str(idx + 1) for idx in range(5)]
 
-# Decision variables are all possible routes
+# Generate all possible routes; decision variables are unit transported per each route
 routes = [(w, h) for w in warehouses for h in houses]  #  all possible routes
 
 #%% Production: how many units can be produced
