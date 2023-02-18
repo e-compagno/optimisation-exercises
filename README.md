@@ -1,2 +1,4 @@
 # optimisation-exercises
-Contains some exercise about optimisation problems
+
+Contains some exercises on optimisation problems 
+
