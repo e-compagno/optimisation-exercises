@@ -16,7 +16,7 @@ houses = [str(idx + 1) for idx in range(5)]
 # Generate all possible routes; decision variables are unit transported per each route
 routes = [(w, h) for w in warehouses for h in houses]  #  all possible routes
 
-#%% Production: how many units can be produced
+#%% Production: how many units max can be produced in each warehouse
 production_df = pd.DataFrame.from_dict({"A": 1000,
                                         "B": 4000
                                         },
@@ -25,7 +25,7 @@ production_df = pd.DataFrame.from_dict({"A": 1000,
 print("Production data")
 print(production_df.head())
 
-#%% demand data
+#%% demand data: minimum units that need to be delivered in each house
 demand_df = pd.DataFrame.from_dict({
     "1": 500,
     "2": 900,
